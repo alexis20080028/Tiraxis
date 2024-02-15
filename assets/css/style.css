@@ -70,14 +70,12 @@ body {
 }
 
 .on {
-    margin: 0 5px 0 0;
     color: white;
     text-transform: uppercase;
     font-size: 14px;
 }
 
 .off {
-    margin: 0 5px 0 0;
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 14px;
@@ -107,12 +105,15 @@ body {
     border-radius: 25px;
     width: 60px;
     margin-right: 15px;
+    border: 2px black solid;
+
 }
 
 .buttonOff {
     height: 25px;
     display: flex;
     justify-content: space-around;
+    flex-direction: row-reverse;
     align-items: center;
     background-color: #ffffff;
     border-radius: 25px;

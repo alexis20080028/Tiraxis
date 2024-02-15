@@ -16,4 +16,10 @@ buttonOn.addEventListener('click', function () {
     rondOn.classList.toggle('rondOff');
     on.classList.toggle('on');
     on.classList.toggle('off');
-})
+    let oncontent = (on.textContent == 'on' ? "off" : "on")
+    if (on.classList.contains('on')) {
+        on.textContent = 'ON';
+    } else {
+        on.textContent = 'OFF';
+    }
+});
