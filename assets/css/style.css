@@ -69,21 +69,36 @@ body {
     align-items: center;
 }
 
-.onOff {
+.on {
     margin: 0 5px 0 0;
     color: white;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-.rond {
-    height: 15px;
-    width: 15px;
+.off {
+    margin: 0 5px 0 0;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.rondOff {
+    height: 13px;
+    width: 13px;
+    background-color: rgb(255, 255, 255);
+    border: black 2px solid;
+    border-radius: 50%;
+}
+
+.rondOn {
+    height: 13px;
+    width: 13px;
     background-color: white;
     border-radius: 50%;
 }
 
-.buttonOnOff {
+.buttonOn {
     height: 25px;
     display: flex;
     justify-content: space-around;
@@ -92,6 +107,18 @@ body {
     border-radius: 25px;
     width: 60px;
     margin-right: 15px;
+}
+
+.buttonOff {
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 60px;
+    margin-right: 15px;
+    border: 2px black solid;
 }
 
 
