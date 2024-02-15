@@ -1,4 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+
+var 
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
 
 .display {
     display: none;
@@ -26,11 +41,9 @@
 
 
 .header {
-
     width: 100%;
-    height: 200px;
-    background-image: linear-gradient(to right, #000000, #745bd0);
-    margin-bottom: 50px;
+    background-image: linear-gradient(270deg,hsl(253deg 55% 59%) 0%,hsl(0deg 0% 0%) 100%
+      );
 }
 
 
@@ -49,13 +62,6 @@
     flex-direction: row;
 }
 
-.wrapperBurger {
-    width:100px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
 .wrapperPartHeader {
     width: 100%;
     display: flex;
@@ -66,6 +72,8 @@
 .onOff {
     margin: 0 5px 0 0;
     color: white;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .rond {
@@ -82,10 +90,123 @@
     align-items: center;
     background-color: #000000;
     border-radius: 25px;
-    width: 50px;
+    width: 60px;
     margin-right: 15px;
 }
 
-img {
-    width: 50px;
+
+
+.navBurgerLi {
+    list-style: none;
+}
+
+.navBurgerLi p {
+    margin: 14px 0 14px 0;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+.navBurgerUl {
+    padding: 0;
+    width: 80px;
+}
+
+.horizontalTrait {
+    width: 1px;
+    height: 120px;
+    background-color: #fff;
+}
+
+.burgerWrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.wrapperConnect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 25px;
+    border-radius: 13px;
+    background-color: #1E1E1E;
+}
+
+.create {
+    margin: 0;
+    text-align: center;
+    font-size: 11px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.connect {
+    margin: 0;
+    text-align: center;
+    font-size: 11px;
+    color: white;
+}
+
+.wrapperCreate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgb(255, 255, 255) solid;
+    width: 90px;
+    height: 25px;
+    border-radius: 13px;
+}
+
+.wrapperCompte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+}
+
+.credit {
+    font-size: 7px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    width: 100px;
+}
+
+.wrapperCredit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapperQuiSommeNous {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 34px;
+}
+
+.imgQuiSommeNous {
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.wrapperQuiSommeN {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperMain {
+    background-color: #2D2D2D;
+    color: white;
+}
+
+.pQuiSommeNous {
+    font-size: 12px;
 }
