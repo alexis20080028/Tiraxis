@@ -235,7 +235,7 @@ body {
 
 .imgQuiSommeNous {
     border-radius: 15px;
-    width: 100%;
+    width: 340px;
     margin-top: 40px;
 }
 
@@ -303,3 +303,38 @@ body {
     height: 40px;
     box-shadow: -2px 4px 15px -1px rgba(0,0,0,0.9);
 }
+
+.news {
+    font-size: 70px;
+    font-weight: 100;
+    text-decoration:underline;
+}
+
+.containNews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapperContainNews {
+    width: 300px;
+    background-color: #1C1C1C;
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.titleNews {
+    font-size: 50px;
+    font-weight: 200;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.containTitleNews {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
