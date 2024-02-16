@@ -2,7 +2,7 @@
 
 
 .capitalize {
-    text-transform: capitalize;
+    text-transform: capitalise;
 }
 
 .uppercase {
@@ -120,14 +120,30 @@ body {
     border: 2px black solid;
 }
 
+.liDowload {
+    border: 2px red solid;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#dowload {
+    height: 10px;
+    margin: 0 0 5px 0;
+    color: red;
+}
 
 
 .navBurgerLi {
     list-style: none;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navBurgerLi p {
-    margin: 14px 0 14px 0;
+    height: 30px;
+    margin: 0;
     text-align: center;
     color: white;
     font-size: 13px;
