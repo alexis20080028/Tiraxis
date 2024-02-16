@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 
-var 
-
 .capitalize {
     text-transform: capitalize;
 }
@@ -237,4 +235,55 @@ body {
 
 .pQuiSommeNous {
     font-size: 12px;
+}
+
+.quiSommeNous {
+    font-size: 30px;
+}
+
+.wrapperButtonDis {
+    background-color: #55429A;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.imgLogoWiki {
+    width: 160px;
+    height: 160px;
+}
+
+.containWiki {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, #000000, #3c8527);
+    height: 250px;
+}
+
+.containTextWiki {
+    width: 190px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.textWiki {
+    font-size: 9px;
+}
+
+.containButtonWiki {
+    background-color: #23710C;
+    width: 130px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    box-shadow: -2px 4px 15px -1px rgba(0,0,0,0.9);
 }
