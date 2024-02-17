@@ -41,7 +41,7 @@ body {
 .header {
     width: 100%;
     background-image: linear-gradient(270deg,hsl(253deg 55% 59%) 0%,hsl(0deg 0% 0%) 100%
-      );
+      );/*BG linear 1*/
 }
 
 
@@ -68,7 +68,7 @@ body {
 }
 
 .on {
-    color: white;
+    color: white;   /*font white*/
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -90,7 +90,7 @@ body {
 .rondOn {
     height: 13px;
     width: 13px;
-    background-color: white;
+    background-color: white;   /*font white*/
     border-radius: 50%;
 }
 
@@ -145,7 +145,7 @@ body {
     height: 30px;
     margin: 0;
     text-align: center;
-    color: white;
+    color: white;   /*font white*/
     font-size: 13px;
 }
 
@@ -190,7 +190,7 @@ body {
     margin: 0;
     text-align: center;
     font-size: 11px;
-    color: white;
+    color: white;   /*font white*/
 }
 
 .wrapperCreate {
@@ -245,8 +245,8 @@ body {
 }
 
 .wrapperMain {
-    background-color: #2D2D2D;
-    color: white;
+    background-color: #2D2D2D;/*BG dark Grey*/
+    color: white;   /*font white*/
 }
 
 .pQuiSommeNous {
@@ -258,7 +258,7 @@ body {
 }
 
 .wrapperButtonDis {
-    background-color: #55429A;
+    background-color: #55429A;/*Darker Purple*/
     width: 200px;
     display: flex;
     justify-content: space-evenly;
@@ -277,7 +277,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, #000000, #3c8527);
+    background-image: linear-gradient(to right, #000000, #3c8527);/*BG linear 3*/
     height: 250px;
 }
 
@@ -294,7 +294,7 @@ body {
 }
 
 .containButtonWiki {
-    background-color: #23710C;
+    background-color: #23710C; /*button wiki*/
     width: 130px;
     border-radius: 10px;
     display: flex;
@@ -318,10 +318,12 @@ body {
 
 .wrapperContainNews {
     width: 300px;
-    background-color: #1C1C1C;
+    background-color: #1C1C1C;/*very dark grey*/
     padding: 20px;
-    margin-top: 10px;
-    position: relative;
+    margin: 10px 0 35px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .titleNews {
@@ -338,3 +340,82 @@ body {
     align-items: center;
 }
 
+.pNews {
+    font-size: 20px;
+}
+
+.containANews {
+    margin-top: 50px;
+}
+
+.aNews {
+    color: #CED0F7;/*very light purple*/
+    font-size: 25px;
+}
+
+.containMostNews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;   /*font white*/
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.mostNewsP {
+    font-size: 33px;
+    margin: 10px 0;
+}
+
+.mostNewsI {
+    font-size: 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C3C3C;/*bg grey*/
+    color: white;   /*font white*/
+}
+
+.logoFooter {
+    width: 150px;
+    margin-top: 80px;
+}
+
+.navFooter {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    width: 200px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.containDowloadLauncherFooter {
+    width: 300px;
+    background-color: #745BD0;/*purple*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.creditFooter {
+    list-style: none;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #6C6C6C;
+    padding: 0;
+    width: 300px;
+}
+
+.copyRight {
+    text-align: center;
+}
