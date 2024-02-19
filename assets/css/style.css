@@ -40,8 +40,8 @@ body {
 
 .header {
     width: 100%;
-    background-image: linear-gradient(270deg,hsl(253deg 55% 59%) 0%,hsl(0deg 0% 0%) 100%
-      );/*BG linear 1*/
+    background-image: linear-gradient(270deg, hsl(253deg 55% 59%) 0%, hsl(0deg 0% 0%) 100%);
+    /*BG linear 1*/
 }
 
 
@@ -68,7 +68,8 @@ body {
 }
 
 .on {
-    color: white;   /*font white*/
+    color: white;
+    /*font white*/
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -90,7 +91,8 @@ body {
 .rondOn {
     height: 13px;
     width: 13px;
-    background-color: white;   /*font white*/
+    background-color: white;
+    /*font white*/
     border-radius: 50%;
 }
 
@@ -145,7 +147,8 @@ body {
     height: 30px;
     margin: 0;
     text-align: center;
-    color: white;   /*font white*/
+    color: white;
+    /*font white*/
     font-size: 13px;
 }
 
@@ -190,7 +193,8 @@ body {
     margin: 0;
     text-align: center;
     font-size: 11px;
-    color: white;   /*font white*/
+    color: white;
+    /*font white*/
 }
 
 .wrapperCreate {
@@ -245,8 +249,10 @@ body {
 }
 
 .wrapperMain {
-    background-color: #2D2D2D;/*BG dark Grey*/
-    color: white;   /*font white*/
+    background-color: #2D2D2D;
+    /*BG dark Grey*/
+    color: white;
+    /*font white*/
 }
 
 .pQuiSommeNous {
@@ -258,7 +264,8 @@ body {
 }
 
 .wrapperButtonDis {
-    background-color: #55429A;/*Darker Purple*/
+    background-color: #55429A;
+    /*Darker Purple*/
     width: 200px;
     display: flex;
     justify-content: space-evenly;
@@ -277,7 +284,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, #000000, #3c8527);/*BG linear 3*/
+    background-image: linear-gradient(to right, #000000, #3c8527);
+    /*BG linear 3*/
     height: 250px;
 }
 
@@ -294,20 +302,21 @@ body {
 }
 
 .containButtonWiki {
-    background-color: #23710C; /*button wiki*/
+    background-color: #23710C;
+    /*button wiki*/
     width: 130px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
-    box-shadow: -2px 4px 15px -1px rgba(0,0,0,0.9);
+    box-shadow: -2px 4px 15px -1px rgba(0, 0, 0, 0.9);
 }
 
 .news {
     font-size: 70px;
     font-weight: 100;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .containNews {
@@ -318,7 +327,8 @@ body {
 
 .wrapperContainNews {
     width: 300px;
-    background-color: #1C1C1C;/*very dark grey*/
+    background-color: #1C1C1C;
+    /*very dark grey*/
     padding: 20px;
     margin: 10px 0 35px 0;
     display: flex;
@@ -331,9 +341,6 @@ body {
     font-weight: 200;
     text-decoration: underline;
     margin: 0;
-}
-
-.containTitleNews {
     width: 100%;
     height: 120px;
     display: flex;
@@ -349,7 +356,8 @@ body {
 }
 
 .aNews {
-    color: #CED0F7;/*very light purple*/
+    color: #CED0F7;
+    /*very light purple*/
     font-size: 25px;
 }
 
@@ -357,7 +365,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;   /*font white*/
+    color: white;
+    /*font white*/
     text-decoration: none;
     margin-bottom: 50px;
 }
@@ -376,8 +385,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #3C3C3C;/*bg grey*/
-    color: white;   /*font white*/
+    background-color: #3C3C3C;
+    /*bg grey*/
+    color: white;
+    /*font white*/
 }
 
 .logoFooter {
@@ -397,7 +408,8 @@ body {
 
 .containDowloadLauncherFooter {
     width: 300px;
-    background-color: #745BD0;/*purple*/
+    background-color: #745BD0;
+    /*purple*/
     display: flex;
     justify-content: center;
     align-items: center;

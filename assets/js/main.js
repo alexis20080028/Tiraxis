@@ -23,3 +23,30 @@ buttonOn.addEventListener('click', function () {
         on.textContent = 'OFF';
     }
 });
+
+//news full js
+
+const containNews = document.querySelector('.containNews');
+
+for (let i = 0; i < 3; i++) {
+    let div = document.createElement('div');
+    div.classList.add('wrapperContainNews')
+    containNews.append(div);
+    let wrapperContainNews = document.querySelectorAll('.wrapperContainNews')
+    let htre = document.createElement('h3');
+    htre.textContent = (newsListings[i].title)
+    htre.classList.add('titleNews');
+    wrapperContainNews[i].append(htre)
+    let p = document.createElement('p');
+    p.classList.add('pNews')
+    p.textContent = (newsListings[i].content)
+    wrapperContainNews[i].append(p)
+    let divContainA = document.createElement('div')
+    divContainA.classList.add('containANews')
+    wrapperContainNews[i].append(divContainA)
+    let containANews = document.querySelectorAll('.containANews');
+    let a = document.createElement('a')
+    a.textContent = "En savoir plus"
+    a.classList.add('aNews')
+    containANews[i].append(a)
+}
