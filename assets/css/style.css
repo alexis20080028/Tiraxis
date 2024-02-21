@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+
+    /* Box Shadow */
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    /* Colors */
+    --white: #fff;
+    --white-alternate: #e4e5fb;
+    --green-minecraft: #3c8527;
+    --red: #A60000;
+
+    /* Purple */
+    --lightest-purple: #ced0f7;
+    --very-light-purple: #b1b2f0;
+    --light-purple: #b1b2f0;
+    --mid-light-purple: #9691e8;
+    --mid-purple: #8476de;
+    --purple: #745bd0;
+    --dark-purple: #644bb7;
+    --darker-purple: #55429a;
+    --very-dark-purple: #443976;
+    --absolute-purple: #2a2145;
+
+    /* Grey */
+    --very-dark-grey: #1C1C1C;
+    --dark-grey: #2D2D2D;
+    --grey: #3C3C3C;
+    --font-footer: #6C6C6C;
+
+    /* Linear */
+    --linear-gradient-1: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(116, 91, 208, 1) 100%);
+    --linear-gradient-2: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(150, 145, 232, 1) 100%);
+    --linear-gradient-3: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(60, 133, 39, 1) 100%);
+
+    /* Dark Mode */
+    --header-BG: var(--linear-gradient-1);
+    --main-BG: var(--dark-grey);
+    --wiki-BG: var(--linear-gradient-3);
+    --switch__on-to-dark: var(--white);
+    --dowload-color: var(--white-alternate);
+    --dowload-BG: var(--red);
+    --dowload-font: var(--white-alternate);
+    --to-darker: var(--dark-grey); 
+    --artitcle-color: var(--very-dark-grey);
+
+    /* Light Mode */
+    --header-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(116, 91, 208, 1) 100%);
+    --main-BG: var(--white-alternate);
+    --wiki-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(60, 133, 39, 1) 100%);
+    --switch__on-to-dark: #1E1E1E;
+    --switch__on-to-white: var(--white);
+    --dowload-color: #D90000;
+    --dowload-font: #D90000;
+    --dowload-BG: var(--white-alternate);
+    --to-darker: var(--very-dark-grey);
+    --artitcle-color: var(--mid-purple);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+/* <Header */
+
+header {
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+/* .header__wrapper {
+} */
+
+.header__BG {
+    background: var(--header-BG);
+    width: 100%;
+}
+
+.header__before {
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button__wrap {
+    width: 50px;
+    height: 50px;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px var(--white) solid;
+    border-left: none;
+}
+
+.button__line {
+    width: 25px;
+    height: 2px;
+    background-color: var(--white)
+}
+
+.header__before__nav {
+    display: none;
+    visibility: none;
+}
+
+.header__before img {
+    height: 94px;
+}
+
+.btn__switch {
+    transition: 0.5s;
+}
+
+.btn__switch div {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.btn__switch p {
+    font-family: 'Space Grotesk', cursive;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.circle__on {
+    background-color: var(--white);
+    border: var(--white) 2px solid;
+}
+
+.circle__off {
+    background-color: var(--white);
+    border: black 2px solid;
+}
+
+.on {
+    color: white;
+}
+
+.off {
+    color: #000;
+}
+
+.btn__on {
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 25px;
+    width: 60px;
+    margin-right: 15px;
+    border: 2px black solid;
+}
+
+.btn__off {
+    height: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    width: 60px;
+    margin-right: 15px;
+    border: 2px black solid;
+}
+
+/* Header After */
+
+.header__after__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 170px;
+}
+
+.nav_style {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav_style ul {
+    padding: 0;
+    width: 80px;
+}
+
+.nav_style li {
+    list-style: none;
+}
+
+.nav_style p {
+    height: 30px;
+    margin: 0;
+    color: var(--switch__on-to-dark);
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Space Grotesk', cursive;
+}
+
+.nav__btn_dowload {
+    border: 2px var(--dowload-color) solid;
+    background-color: var(--dowload-BG);
+    border-radius: 10px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.nav__btn_dowload:only-child {
+    height: 35px;
+    width: 70px;
+    font-size: 12px;
+    margin: 0;
+    font-weight: bold;
+    color: var(--dowload-font);
+    text-transform: capitalize;
+    font-family: 'Space Grotesk', cursive;
+}
+
+.v-line {
+    background-color: var(--white);
+    width: 1.5px;
+    height: 122px;
+}
+
+.header__after__accompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__after__accompt button {
+    height: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 3px 0;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+        height: 50px;
+        margin: 7px 0;
+    }
+}
+
+.header__after__accompt button p {
+    text-transform: capitalize;
+    font-family: 'Space Grotesk', cursive;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.header__after__signup {
+    border: 2px var(--switch__on-to-dark) solid;
+    background: none;
+}
+
+.header__after__login {
+    border: none;
+    background-color: var(--to-darker);
+}
+
+.signup {
+    color: var(--switch__on-to-dark);
+}
+
+.login {
+    color: var(--white);
+}
+
+.header__after__credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__after__credits p {
+    font-size: 8px;
+    color: var(--switch__on-to-dark);
+    text-align: center;
+    font-weight: 100;
+    width: 160px;
+    margin: 5px 0;
+    font-family: 'Space Grotesk', cursive;
+}
+
+/* Header> */
+
+
+/* <Main */
+
+
+/* Main> */
+
+
+/* <Footer */
+
+
+/* Footer> */
+
+/* KeyFrames */
+
+/* -\ Clear /- */
+
+.clear {
+    clear: both;
+}
