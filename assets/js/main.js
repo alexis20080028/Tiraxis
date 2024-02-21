@@ -46,7 +46,7 @@ for (let i = 0; i < 3; i++) {
     wrapperContainNews[i].append(divContainA);
     let containANews = document.querySelectorAll('.containANews');
     let a = document.createElement('a');
-    a.textContent = "En savoir plus";
+    a.textContent = "En voir plus";
     a.classList.add('aNews');
     containANews[i].append(a);
 }
@@ -67,3 +67,12 @@ iHtml.classList.add('mostNewsI')
 iHtml.classList.add('fa-arrow-right')
 iHtml.classList.add('fa-solid')
 containANews.append(iHtml)
+
+let toGoNews = document.querySelectorAll('.aNews')
+
+
+for (let index = 0; index < toGoNews.length; index++) {
+    toGoNews[index].addEventListener('click', function() {
+        console.log(toGoNews[index])
+    }) 
+}
