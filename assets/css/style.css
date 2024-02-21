@@ -46,7 +46,7 @@
     --artitcle-color: var(--very-dark-grey);
 
     /* Light Mode */
-    --header-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(116, 91, 208, 1) 100%);
+    /* --header-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(116, 91, 208, 1) 100%);
     --main-BG: var(--white-alternate);
     --wiki-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(60, 133, 39, 1) 100%);
     --switch__on-to-dark: #1E1E1E;
@@ -55,7 +55,7 @@
     --dowload-font: #D90000;
     --dowload-BG: var(--white-alternate);
     --to-darker: var(--very-dark-grey);
-    --artitcle-color: var(--mid-purple);
+    --artitcle-color: var(--mid-purple); */
 }
 
 * {
@@ -126,6 +126,7 @@ header {
 }
 
 .btn__switch {
+    box-shadow: var(--box-shadow);
     transition: 0.5s;
 }
 
@@ -310,7 +311,7 @@ header {
     color: var(--switch__on-to-dark);
     text-align: center;
     font-weight: 100;
-    width: 160px;
+    width: 100px;
     margin: 5px 0;
     font-family: 'Space Grotesk', cursive;
 }
