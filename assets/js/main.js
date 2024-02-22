@@ -4,6 +4,8 @@ const btnOn = document.querySelector('.btn__on');
 const circleOn = document.querySelector('.circle__on');
 const on = document.querySelector('.on');
 
+// Mode | Dark/Light
+
 const enableDarkMode = () => {
     document.documentElement.classList.add('dark-mode');
     localStorage.setItem('theme', 'dark');
@@ -29,6 +31,7 @@ const toggleDarkMode = () => {
         root.style.setProperty('--button-discord', 'var(--dark-purple)');
         root.style.setProperty('--button-wiki', 'var(--dark-green)');
         root.style.setProperty('--artitcle-color', 'var(--very-dark-grey)');
+        root.style.setProperty('--artitcle-box-shadow', 'var(--box-shadow)');
         enableDarkMode();
     } else {
         // Mode clair
@@ -44,6 +47,7 @@ const toggleDarkMode = () => {
         root.style.setProperty('--button-discord', 'var(--mid-purple)');
         root.style.setProperty('--button-wiki', 'url(../images/Snow_BG.jpg)');
         root.style.setProperty('--artitcle-color', 'var(--mid-purple)');
+        root.style.setProperty('--artitcle-box-shadow', 'rgba(132, 118, 222, 1) -8px 11px 35px 8px');
         disableDarkMode();
     }
 };
@@ -56,6 +60,8 @@ const applyDarkMode = () => {
         disableDarkMode();
     }
 };
+
+// Button | On/Off
 
 buttonMenu.addEventListener('click', () => {
     burgerInfo.classList.toggle('header__after');
@@ -72,5 +78,57 @@ btnOn.addEventListener('click', () => {
     on.classList.toggle('off');
     on.textContent = (on.classList.contains('on') ? 'ON' : 'OFF');
 });
+
+// News | Functions
+
+function divCreater(className, parentElement) {
+    let div = document.createElement('div');
+    div.classList.add(className);
+    parentElement.appendChild(div);
+    return div;
+}
+
+const articlesWrapper = document.querySelector('.news__articles__wrap');
+
+for (let i = 0; i < 4; i++) {
+    const article = divCreater('article', articlesWrapper);
+    const newsArticle = divCreater('news__article', article);
+    const titleContainer = divCreater('article__title__container', newsArticle);
+
+    const artCircle = document.createElement('div');
+    artCircle.classList.add('art-circle');
+
+    const articleTitle = document.createElement('h3');
+    articleTitle.textContent = (newsListings[i].title);
+
+    // Ajout de l'élément art-circle et h3 à article__title__container
+    titleContainer.appendChild(artCircle);
+    titleContainer.appendChild(articleTitle);
+
+    // Création de l'élément p pour le contenu de l'article
+    const articleContent = document.createElement('p');
+    articleContent.textContent = (newsListings[i].content); // Utilisation de newsListings[i].content
+
+    // Création de l'élément art-link
+    const artLink = document.createElement('div');
+    artLink.classList.add('art-link');
+
+    // Création des liens à l'intérieur de art-link
+    const link1 = document.createElement('a');
+    link1.setAttribute('href', '#');
+    link1.textContent = 'Lien';
+
+    const link2 = document.createElement('a');
+    link2.setAttribute('href', '#');
+    link2.textContent = 'Lien';
+
+    // Ajout des liens à art-link
+    artLink.appendChild(link1);
+    artLink.appendChild(link2);
+
+    // Ajout de tous les éléments créés à newsArticle
+    newsArticle.appendChild(articleContent);
+    newsArticle.appendChild(artLink);
+}
 
 
