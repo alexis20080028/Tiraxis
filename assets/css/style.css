@@ -9,6 +9,7 @@
     --white: #fff;
     --white-alternate: #e4e5fb;
     --green-minecraft: #3c8527;
+    --dark-green: #23710C;
     --red: #A60000;
 
     /* Purple */
@@ -42,7 +43,9 @@
     --dowload-color: var(--white-alternate);
     --dowload-BG: var(--red);
     --dowload-font: var(--white-alternate);
-    --to-darker: var(--dark-grey); 
+    --to-darker: var(--dark-grey);
+    --button-discord: var(--dark-purple);
+    --button-wiki: var(--dark-green);
     --artitcle-color: var(--very-dark-grey);
 
     /* Light Mode */
@@ -55,6 +58,8 @@
     --dowload-font: #D90000;
     --dowload-BG: var(--white-alternate);
     --to-darker: var(--very-dark-grey);
+    --button-discord: var(--mid-purple);
+    --button-wiki: url(../images/Snow_BG.jpg);
     --artitcle-color: var(--mid-purple); */
 }
 
@@ -68,6 +73,7 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Space Grotesk', cursive;
 }
 
 .hide {
@@ -98,7 +104,7 @@ header {
 }
 
 .button__wrap {
-    width: 50px;
+    width: 55px;
     height: 50px;
     background-color: #1E1E1E;
     display: flex;
@@ -111,8 +117,8 @@ header {
 }
 
 .button__line {
-    width: 25px;
-    height: 2px;
+    width: 30px;
+    height: 1px;
     background-color: var(--white)
 }
 
@@ -138,7 +144,7 @@ header {
 }
 
 .btn__switch p {
-    font-family: 'Space Grotesk', cursive;
+
     text-transform: uppercase;
     font-size: 14px;
     transition: 0.5s;
@@ -209,17 +215,16 @@ header {
 }
 
 .nav_style li {
+    height: 30px;
     list-style: none;
 }
 
-.nav_style p {
-    height: 30px;
+.nav_style a {
     margin: 0;
     color: var(--switch__on-to-dark);
     font-size: 12px;
     text-transform: capitalize;
     font-weight: bold;
-    font-family: 'Space Grotesk', cursive;
 }
 
 .nav__btn_dowload {
@@ -240,11 +245,10 @@ header {
     font-weight: bold;
     color: var(--dowload-font);
     text-transform: capitalize;
-    font-family: 'Space Grotesk', cursive;
 }
 
 .v-line {
-    background-color: var(--white);
+    background-color: var(--switch__on-to-dark);
     width: 1.5px;
     height: 122px;
 }
@@ -269,14 +273,14 @@ header {
     transition: 0.5s;
 
     &:hover {
-        height: 50px;
+        height: 45px;
         margin: 7px 0;
     }
 }
 
 .header__after__accompt button p {
     text-transform: capitalize;
-    font-family: 'Space Grotesk', cursive;
+
     font-size: 10px;
     font-weight: bold;
 }
@@ -313,7 +317,7 @@ header {
     font-weight: 100;
     width: 100px;
     margin: 5px 0;
-    font-family: 'Space Grotesk', cursive;
+
 }
 
 /* Header> */
@@ -321,6 +325,86 @@ header {
 
 /* <Main */
 
+main {
+    width: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.main__BG {
+    background-color: var(--main-BG);
+}
+
+.main__us {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    padding: 50px 0;
+}
+
+.main__us img {
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+}
+
+.main__us__wrap h1,
+.main__us__wrap p {
+    color: var(--switch__on-to-dark);
+}
+
+.main__us__wrap button {
+    display: flex;
+    align-items: center;
+    background-color: var(--button-discord);
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-shadow: var(--box-shadow);
+    color: var(--white-alternate);
+}
+
+.main__us__wrap button p {
+    margin-right: 10px;
+    font-weight: bold;
+    color: var(--white-alternate);
+}
+
+.main__wiki {
+    height: 445px;
+    padding: 0 5px;
+    background: var(--wiki-BG);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main__wiki img {
+    width: 50%;
+}
+
+.main__wiki__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__wiki__wrap p {
+    color: var(--switch__on-to-dark);
+    font-size: 12px;
+}
+
+.main__wiki__wrap button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--button-wiki);
+    box-shadow: var(--box-shadow);
+    color: var(--switch__on-to-dark);
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: 70%;
+    padding: 0 20px;
+}
 
 /* Main> */
 

@@ -26,6 +26,8 @@ const toggleDarkMode = () => {
         root.style.setProperty('--dowload-BG', 'var(--red)');
         root.style.setProperty('--dowload-font', 'var(--white-alternate)');
         root.style.setProperty('--to-darker', 'var(--dark-grey)');
+        root.style.setProperty('--button-discord', 'var(--dark-purple)');
+        root.style.setProperty('--button-wiki', 'var(--dark-green)');
         root.style.setProperty('--artitcle-color', 'var(--very-dark-grey)');
         enableDarkMode();
     } else {
@@ -39,6 +41,8 @@ const toggleDarkMode = () => {
         root.style.setProperty('--dowload-font', '#D90000');
         root.style.setProperty('--dowload-BG', 'var(--white-alternate)');
         root.style.setProperty('--to-darker', 'var(--very-dark-grey)');
+        root.style.setProperty('--button-discord', 'var(--mid-purple)');
+        root.style.setProperty('--button-wiki', 'url(../images/Snow_BG.jpg)');
         root.style.setProperty('--artitcle-color', 'var(--mid-purple)');
         disableDarkMode();
     }
