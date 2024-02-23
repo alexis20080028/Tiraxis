@@ -64,8 +64,13 @@ const applyDarkMode = () => {
 // Button | On/Off
 
 buttonMenu.addEventListener('click', () => {
-    burgerInfo.classList.toggle('header__after');
-    burgerInfo.classList.toggle('hide');
+    buttonMenu.classList.toggle('cross');
+    burgerInfo.classList.toggle('close');
+
+    buttonMenu.classList.toggle('closedbtn');
+    buttonMenu.classList.toggle('openbtn');
+
+    burgerInfo.classList.toggle('openMenu');
 });
 
 btnOn.addEventListener('click', () => {
@@ -101,19 +106,15 @@ for (let i = 0; i < 4; i++) {
     const articleTitle = document.createElement('h3');
     articleTitle.textContent = (newsListings[i].title);
 
-    // Ajout de l'élément art-circle et h3 à article__title__container
     titleContainer.appendChild(artCircle);
     titleContainer.appendChild(articleTitle);
 
-    // Création de l'élément p pour le contenu de l'article
     const articleContent = document.createElement('p');
-    articleContent.textContent = (newsListings[i].content); // Utilisation de newsListings[i].content
+    articleContent.textContent = (newsListings[i].content);
 
-    // Création de l'élément art-link
     const artLink = document.createElement('div');
     artLink.classList.add('art-link');
 
-    // Création des liens à l'intérieur de art-link
     const link1 = document.createElement('a');
     link1.setAttribute('href', '#');
     link1.textContent = 'Lien';
@@ -122,11 +123,9 @@ for (let i = 0; i < 4; i++) {
     link2.setAttribute('href', '#');
     link2.textContent = 'Lien';
 
-    // Ajout des liens à art-link
     artLink.appendChild(link1);
     artLink.appendChild(link2);
 
-    // Ajout de tous les éléments créés à newsArticle
     newsArticle.appendChild(articleContent);
     newsArticle.appendChild(artLink);
 }

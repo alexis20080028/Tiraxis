@@ -105,13 +105,10 @@ h3 {
 
 header {
     width: 100%;
-    box-shadow: var(--box-shadow);
 }
 
-/* .header__wrapper {
-} */
-
 .header__BG {
+    position: relative;
     background: var(--header-BG);
     width: 100%;
 }
@@ -120,10 +117,13 @@ header {
     height: 94px;
     display: flex;
     justify-content: space-between;
+    background: none;
     align-items: center;
+    z-index: 2;
 }
 
 .button__wrap {
+    position: relative;
     width: 55px;
     height: 50px;
     background-color: #1E1E1E;
@@ -136,10 +136,38 @@ header {
     border-left: none;
 }
 
+.button__wrap.closedbtn {
+    background-color: #1E1E1E;
+    transition: 0.3s ease;
+}
+
+.button__wrap.openbtn {
+    background-color: var(--dark-grey);
+    transition: 0.3s ease;
+}
+
 .button__line {
     width: 30px;
     height: 1px;
-    background-color: var(--white)
+    background-color: var(--white);
+    transition: all 0.4s ease;
+}
+
+.cross .button__line:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.cross .button__line:nth-child(2) {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 5px;
+    width: 22px;
+}
+
+.cross .button__line:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
 }
 
 .header__before__nav {
@@ -215,11 +243,31 @@ header {
 
 /* Header After */
 
+.header__after {
+    position: relative;
+    top: -500px;
+    width: 100%;
+    transform: translate3d(0,-100%,0); /* Commencez avec le menu fermé en le déplaçant vers le haut */
+    transition: transform 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+    visibility: hidden;
+    height: 0;
+}
+
+.header__after.openMenu {
+    transform: translate3d(0, 0, 0); /* Lorsque la classe openMenu est ajoutée, affichez le menu en le déplaçant vers le bas */
+    visibility: visible;
+    height: 170px;
+    top: auto;
+    z-index: 1;
+}
+
 .header__after__wrap {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 170px;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .nav_style {
@@ -320,6 +368,8 @@ header {
     align-items: center;
     flex-direction: column;
     list-style: none;
+    text-align: center;
+    width: 150px;
 }
 
 .header__after__credits a {
@@ -328,7 +378,6 @@ header {
     text-align: center;
     text-decoration: none;
     font-weight: 100;
-    width: 100px;
     margin: 5px 0;
     opacity: 0.8;
 }
