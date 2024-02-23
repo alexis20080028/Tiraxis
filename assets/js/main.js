@@ -95,7 +95,7 @@ function divCreater(className, parentElement) {
 
 const articlesWrapper = document.querySelector('.news__articles__wrap');
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 3; i++) {
     const article = divCreater('article', articlesWrapper);
     const newsArticle = divCreater('news__article', article);
     const titleContainer = divCreater('article__title__container', newsArticle);
