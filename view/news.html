@@ -5,7 +5,7 @@
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<title>Tiraxis | Serveur Minecraft</title>
-	<link rel="shortcut icon" href="../assets/images/logoTiraxis.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../assets/images/" type="image/x-icon">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta name='description' content='Web site for Tiraxis, the Server For The New Gen 😍'>
 	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/normalize.css'>
@@ -26,7 +26,7 @@
 					<div class="button__line"></div>
 				</button>
 				<div class="nav__wrapper">
-					<img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis">
+					<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis"></a>
 					<nav class="header__before__nav nav_style">
 						<ul>
 							<li>
@@ -97,12 +97,11 @@
 	</header>
 
 	<main>
-		<div class="main__news main__BG">
-			<h1>News :</h1>
-			<div class="news__articles__wrap">
-
+		<div class="main__news">
+			<h2>News :</h2>
+			<div class="news__articles__wrap_n">
+				
 			</div>
-		</div>
 
 
 
@@ -111,7 +110,8 @@
 	<footer>
 		<div class="footer__BG footer__wrapper">
 			<div class="footer__img-nav__wrapper">
-				<img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo">
+				<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo"></a>
+				
 				<ul class="footer__nav">
 					<li>
 						<a href="../view/news.html">News</a>
@@ -144,8 +144,12 @@
 	<!-- #Script -->
 	<script src="https://kit.fontawesome.com/61d24657b9.js" crossorigin="anonymous"></script>
 	<script src='../assets/js/data.js'></script>
+	<script src='../assets/js/newsCreator.js'></script>
 	<script src='../assets/js/news.js'></script>
 
+	<script>
+		createNews(newsListings.length,".news__articles__wrap_n")
+	</script>
 </body>
 
 </html>
