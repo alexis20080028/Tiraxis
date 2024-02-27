@@ -24,9 +24,9 @@ const toggleDarkMode = () => {
         root.style.setProperty('--main-BG', 'var(--dark-grey)');
         root.style.setProperty('--wiki-BG', 'var(--linear-gradient-3)');
         root.style.setProperty('--switch__on-to-dark', 'var(--white)');
-        root.style.setProperty('--dowload-color', 'var(--white-alternate)');
-        root.style.setProperty('--dowload-BG', 'var(--red)');
-        root.style.setProperty('--dowload-font', 'var(--white-alternate)');
+        root.style.setProperty('--download-color', 'var(--white-alternate)');
+        root.style.setProperty('--download-BG', 'var(--red)');
+        root.style.setProperty('--download-font', 'var(--white-alternate)');
         root.style.setProperty('--to-darker', 'var(--dark-grey)');
         root.style.setProperty('--button-discord', 'var(--dark-purple)');
         root.style.setProperty('--button-wiki', 'var(--dark-green)');
@@ -40,9 +40,9 @@ const toggleDarkMode = () => {
         root.style.setProperty('--wiki-BG', 'linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(60, 133, 39, 1) 100%)');
         root.style.setProperty('--switch__on-to-dark', '#1E1E1E');
         root.style.setProperty('--switch__on-to-white', 'var(--white)');
-        root.style.setProperty('--dowload-color', '#D90000');
-        root.style.setProperty('--dowload-font', '#D90000');
-        root.style.setProperty('--dowload-BG', 'var(--white-alternate)');
+        root.style.setProperty('--download-color', '#D90000');
+        root.style.setProperty('--download-font', '#D90000');
+        root.style.setProperty('--download-BG', 'var(--white-alternate)');
         root.style.setProperty('--to-darker', 'var(--very-dark-grey)');
         root.style.setProperty('--button-discord', 'var(--mid-purple)');
         root.style.setProperty('--button-wiki', 'url(../images/Snow_BG.jpg)');
@@ -124,7 +124,6 @@ for (let i = 0; i < 3; i++) {
     link2.textContent = 'Lien';
 
     artLink.appendChild(link1);
-    artLink.appendChild(link2);
 
     newsArticle.appendChild(articleContent);
     newsArticle.appendChild(artLink);

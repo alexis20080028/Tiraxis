@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Space+Grotesk:wght@300..700&family=Squada+One&display=swap');
+
+:root {
+
+    /* Shadow */
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --text-shadow: -1px 6px 10px rgba(0,0,0,0.61);
+
+    /* Colors */
+    --white: #fff;
+    --white-alternate: #e4e5fb;
+    --green-minecraft: #3c8527;
+    --dark-green: #23710C;
+    --red: #A60000;
+
+    /* Purple */
+    --lightest-purple: #ced0f7;
+    --very-light-purple: #b1b2f0;
+    --light-purple: #b1b2f0;
+    --mid-light-purple: #9691e8;
+    --mid-purple: #8476de;
+    --purple: #745bd0;
+    --dark-purple: #644bb7;
+    --darker-purple: #55429a;
+    --very-dark-purple: #443976;
+    --absolute-purple: #2a2145;
+
+    /* Grey */
+    --very-dark-grey: #1C1C1C;
+    --dark-grey: #2D2D2D;
+    --grey: #3C3C3C;
+    --font-footer: #6C6C6C;
+
+    /* Linear */
+    --linear-gradient-1: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(116, 91, 208, 1) 100%);
+    --linear-gradient-2: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(150, 145, 232, 1) 100%);
+    --linear-gradient-3: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(60, 133, 39, 1) 100%);
+
+    /* Dark Mode */
+    --header-BG: var(--linear-gradient-1);
+    --main-BG: var(--dark-grey);
+    --wiki-BG: var(--linear-gradient-3);
+    --switch__on-to-dark: var(--white);
+    --dowload-color: var(--white-alternate);
+    --dowload-BG: var(--red);
+    --dowload-font: var(--white-alternate);
+    --to-darker: var(--dark-grey);
+    --button-discord: var(--dark-purple);
+    --button-wiki: var(--dark-green);
+    --artitcle-color: var(--very-dark-grey);
+    --artitcle-box-shadow: var(--box-shadow);
+    
+    /* Light Mode */
+    /* --header-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(116, 91, 208, 1) 100%);
+    --main-BG: var(--white-alternate);
+    --wiki-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(60, 133, 39, 1) 100%);
+    --switch__on-to-dark: #1E1E1E;
+    --switch__on-to-white: var(--white);
+    --dowload-color: #D90000;
+    --dowload-font: #D90000;
+    --dowload-BG: var(--white-alternate);
+    --to-darker: var(--very-dark-grey);
+    --button-discord: var(--mid-purple);
+    --button-wiki: url(../images/Snow_BG.jpg);
+    --artitcle-color: var(--mid-purple); 
+    --artitcle-box-shadow: rgba(132, 118, 222, 1) 0px 5px 15px; */ 
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', cursive;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
+h1 {
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h2,
+h3 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 10px;
+}
+
+p {
+    @media screen and (min-width: 900px) {
+        font-size: 17px;
+    }
+}
+
+/* <Header */
+
+.header__BG {
+  position: relative;
+  background: var(--wiki-BG);
+  width: 100%;
+}
+
+/* Wiki Nav */
+
+.wiki__nav__wrapper {
+  background-color: var(--main-BG);
+}
+
+.wiki__nav__wrapper nav ul {
+  position: relative;
+  margin: 0;
+  list-style: none;
+  height: 200px;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
+}
+
+/* Header> */
+
+/* <Main */
+
+
+
+/* Main> */
+
+
+/* <Footer */
+
+
+
+/* Footer> */

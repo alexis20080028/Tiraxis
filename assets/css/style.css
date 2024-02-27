@@ -41,9 +41,9 @@
     --main-BG: var(--dark-grey);
     --wiki-BG: var(--linear-gradient-3);
     --switch__on-to-dark: var(--white);
-    --dowload-color: var(--white-alternate);
-    --dowload-BG: var(--red);
-    --dowload-font: var(--white-alternate);
+    --download-color: var(--white-alternate);
+    --download-BG: var(--red);
+    --download-font: var(--white-alternate);
     --to-darker: var(--dark-grey);
     --button-discord: var(--dark-purple);
     --button-wiki: var(--dark-green);
@@ -56,9 +56,9 @@
     --wiki-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(60, 133, 39, 1) 100%);
     --switch__on-to-dark: #1E1E1E;
     --switch__on-to-white: var(--white);
-    --dowload-color: #D90000;
-    --dowload-font: #D90000;
-    --dowload-BG: var(--white-alternate);
+    --download-color: #D90000;
+    --download-font: #D90000;
+    --download-BG: var(--white-alternate);
     --to-darker: var(--very-dark-grey);
     --button-discord: var(--mid-purple);
     --button-wiki: url(../images/Snow_BG.jpg);
@@ -165,19 +165,19 @@ header {
 }
 
 .cross .button__line:nth-child(1) {
-    transform: rotate(45deg);
+    transform: rotate(225deg);
     position: absolute;
 }
 
 .cross .button__line:nth-child(2) {
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     position: absolute;
     left: 5px;
     width: 22px;
 }
 
 .cross .button__line:nth-child(3) {
-    transform: rotate(-45deg);
+    transform: rotate(-225deg);
     position: absolute;
 }
 
@@ -275,8 +275,8 @@ header {
     position: relative;
     top: -500px;
     width: 100%;
-    transform: translate3d(0,-100%,0); /* Commencez avec le menu fermé en le déplaçant vers le haut */
-    transition: transform 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+    transform: translate3d(0,-100%,0);
+    transition: transform 0.3s ease; 
     visibility: hidden;
     height: 0;
 
@@ -287,7 +287,7 @@ header {
 }
 
 .header__after.openMenu {
-    transform: translate3d(0, 0, 0); /* Lorsque la classe openMenu est ajoutée, affichez le menu en le déplaçant vers le bas */
+    transform: translate3d(0, 0, 0);
     visibility: visible;
     height: 170px;
     top: auto;
@@ -317,7 +317,16 @@ header {
         align-items: center;
         justify-content: space-around;
         margin-left: 10px;
-        width: 267px;
+        width: 300px;
+    }
+
+    @media screen and (min-width: 1024px) {    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 10px;
+        width: 350px;
     }
 }
 
@@ -333,37 +342,38 @@ header {
     margin: 0;
     color: var(--switch__on-to-dark);
     font-size: 12px;
+    font-weight: 300;
     text-transform: capitalize;
     text-decoration: none;
-    font-weight: bold;
 
     @media screen and (min-width: 900px) {
         font-size: 14px;
     }
 }
 
-.nav__btn_dowload {
-    border: 2px var(--dowload-color) solid;
-    background-color: var(--dowload-BG);
+.nav__btn_download {
+    border: 2px var(--download-color) solid;
+    background-color: var(--download-BG);
     border-radius: 10px;
-    vertical-align: middle;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     box-shadow: var(--box-shadow);
 }
 
-.nav__btn_dowload:only-child {
+.nav__btn_download:only-child {
     height: 35px;
-    width: 70px;
+    width: 80px;
     font-size: 12px;
     margin: 0;
     font-weight: bold;
-    color: var(--dowload-font);
+    color: var(--download-font);
     text-transform: capitalize;
 
     @media screen and (min-width: 900px) {
         height: 35px;
-        width: 80px;
+        width: 90px;
         font-size: 14px;
     }
 }
@@ -406,6 +416,7 @@ header {
     font-weight: bold;
     box-shadow: var(--box-shadow);
     cursor: pointer;
+    font-weight: 400;
     transition: 0.5s;
 
     &:hover {
@@ -733,7 +744,7 @@ main {
 
 .news__article {
     height: 450px;
-    width: 350px;
+    width: 300px;
     background-color: var(--artitcle-color);
     box-shadow: var(--artitcle-box-shadow);
     padding: 20px;
@@ -876,7 +887,7 @@ main {
     text-decoration: none;
 }
 
-.footer__dowload {
+.footer__download {
     width: 267px;
     height: 64px;
     background-color: var(--purple);
@@ -918,11 +929,3 @@ main {
 }
 
 /* Footer> */
-
-/* KeyFrames */
-
-/* -\ Clear /- */
-
-.clear {
-    clear: both;
-}
