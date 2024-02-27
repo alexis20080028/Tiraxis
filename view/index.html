@@ -1,152 +1,200 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang='FR-fr'>
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Tiraxis | Serveur Minecraft</title>
+    <link rel="shortcut icon" href="../assets/images/logoTiraxis.png" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta name="description" content="site pour le serveur minecraft Tiraxis">
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/normalize.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/style.css'>
+    <meta name='description' content='Web site for Tiraxis, the Server For The New Gen 😍'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/style.css'>
 </head>
 
 <body>
-    <header class="header">
-        <div class="wrapperPartHeader">
-            <div class="containBurgerMenuOpen">
-                <div class="burgerMenuOpen"></div>
-                <div class="burgerMenuOpen"></div>
-                <div class="burgerMenuOpen"></div>
-            </div>
-            <div class="containLogoNav">
 
-                <img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis" class="testt">
-                <nav class="nav-bar display">
-                    <ul>
+    <!-- #Header -->
+
+    <header>
+        <div class="header__BG">
+            <div class="header__before">
+                <button id="buttonMenu" class="button__wrap">
+                    <div class="button__line"></div>
+                    <div class="button__line"></div>
+                    <div class="button__line"></div>
+                </button>
+                <div class="nav__wrapper">
+                    <img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis">
+                    <nav class="header__before__nav nav_style">
+                        <ul>
+                            <li>
+                                <a href="#">news</a>
+                            </li>
+                            <li>
+                                <a href="#">wiki</a>
+                            </li>
+                            <li><button class="nav__btn_download">download</button></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="accompt__mode__wrapper">
+                    <div class="header__accompt media__accompt">
+                        <button>
+                            sign up
+                        </button>
+                        <button>
+                            login
+                        </button>
+                    </div>
+                    <div class="btn__on btn__switch">
+                        <div class="circle__on"></div>
+                        <p class="on">on</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header__after">
+                <div class="header__after__wrap">
+                    <nav class="header__after__nav nav_style">
+                        <ul>
+                            <li>
+                                <a href="#">news</a>
+                            </li>
+                            <li>
+                                <a href="#">wiki</a>
+                            </li>
+                            <li><button class="nav__btn_download">download</button></li>
+                        </ul>
+                    </nav>
+                    <div class="v-line"></div>
+                    <div class="header__accompt">
+                        <button>
+                            sign up
+                        </button>
+                        <button>
+                            login
+                        </button>
+                    </div>
+                    <ul class="header__after__credits">
                         <li>
-                            <p>news</p>
+                            <a href="#">Instagram</a>
                         </li>
                         <li>
-                            <p class="uppercase">faq</p>
+                            <a href="#">Discord</a>
                         </li>
                         <li>
-                            <p>wiki</p>
-                        </li>
-                        <li>
-                            <p>dowload</p>
+                            <a href="#">© Lorem ipsum dolor sit amet consecteur adipiscing</a>
                         </li>
                     </ul>
-                </nav>
-            </div>
-            <div class="display">
-                <div class="wrapperCreate">
-                    <p class="create">créer un compte</p>
                 </div>
-                <div class="wrapperConnect">
-                    <p class="connect">se connecter</p>
-                </div>
-            </div>
-            <div class="buttonOn">
-                <div class="rondOn"></div>
-                <p class="on uppercase">on</p>
-            </div>
-        </div>
-        <div class="display burWrapper">
-            <nav>
-                <ul class="navBurgerUl">
-                    <li class="navBurgerLi">
-                        <p>news</p>
-                    </li>
-                    <li class="navBurgerLi">
-                        <p class="uppercase">faq</p>
-                    </li>
-                    <li class="navBurgerLi">
-                        <p>wiki</p>
-                    </li>
-                    <li class="navBurgerLi liDowload">
-                        <p id="dowload">dowload</p>
-                    </li>
-                </ul>
-            </nav>
-            <div class="horizontalTrait"></div>
-            <div class="wrapperCompte">
-                <div class="wrapperCreate">
-                    <p class="create">créer un compte</p>
-                </div>
-                <div class="wrapperConnect">
-                    <p class="connect">se connecter</p>
-                </div>
-            </div>
-            <div class="wrapperCredit">
-                <p class="credit">news</p>
-                <p class="credit">news</p>
-                <p class="credit">© Lorem ipsum dolor sit amet consecteur adipiscing</p>
             </div>
         </div>
     </header>
-    <main class="wrapperMain">
-        <div class="wrapperQuiSommeNous">
-            <img src="/assets/images/pp_pro.png" alt="photo de synthèse" class="imgQuiSommeNous">
-            <div class="wrapperQuiSommeN">
-                <h1 class="quiSommeNous">Qui sommes nous ?</h1>
-                <p class="pQuiSommeNous">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo
-                    libero. Donec a ultrices
-                    diam, at fringilla nibh. Nullam accumsan felis est, sit amet viverra orci posuere et. Cras a finibus
-                    ligula. Proin eget consectetur elit. Donec risus arcu, tempor a eleifend vel, dictum quis odio.
-                    Donec felis augue, hendrerit vitae mauris quis, vulputate hendrerit urna. Morbi tincidunt, metus non
-                    fermentum imperdiet.</p>
-                <div class="wrapperButtonDis">
-                    <p>Rejoins Nous !</p><i class="fa-brands fa-discord"></i>
+
+    <!-- #Header -->
+
+    <!-- #Main -->
+
+    <main>
+        <div class="main__BG ">
+            <div class="main__us">
+                <div class="us__img__wrap">
+                    <img src="/assets/images/pp_pro.png" alt="photo de synthèse" class="main__us__img">
+                </div>
+                <div class="main__us__wrap">
+                    <h1>Who are we ?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo
+                        libero. Donec a ultrices
+                        diam, at fringilla nibh. Nullam accumsan felis est, sit amet viverra orci posuere et. Cras a
+                        finibus
+                        ligula. Proin eget consectetur elit. Donec risus arcu, tempor a eleifend vel, dictum quis odio.
+                        Donec felis augue, hendrerit vitae mauris quis, vulputate hendrerit urna. Morbi tincidunt, metus
+                        non
+                        fermentum imperdiet.</p>
+                    <button onclick="window.location.href = 'https://discord.com/';">
+                        Join us !<i class="fa-brands fa-discord"></i>
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="containWiki">
-            <img src="/assets/images/Wiki_Tiraxis.png" alt="wiki logo Tiraxis" class="imgLogoWiki">
-            <div class="containTextWiki">
-                <p class="textWiki">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero.
-                    Donec a ultrices
-                    diam, at fringilla nibh. Nullam accumsan felis est, sit amet viverra orci posuere et. Cras a finibus
-                    ligula. Proin eget consectetur elit. Donec risus arcu, tempor a eleifend vel, dictum quis odio.
-                    Donec felis augue, hendrerit vitae mauris quis, vulputate hendrerit urna. Morbi tincidunt, metus non
-                    fermentum imperdiet.</p>
-                <div class="containButtonWiki">
-                    <h2>wiki</h2>
+            <div class="main__wiki">
+                <img src="/assets/images/Wiki_Tiraxis.png" alt="wiki logo Tiraxis" class="imgLogoWiki">
+                <div class="main__wiki__wrap">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non commodo libero.
+                        Donec a ultrices
+                        diam, at fringilla nibh. Nullam accumsan felis est, sit amet viverra orci posuere et. Cras a
+                        finibus
+                        ligula. Proin eget consectetur elit. Donec risus arcu, tempor a eleifend vel, dictum quis odio.
+                        Donec felis augue, hendrerit vitae mauris quis, vulputate hendrerit urna. Morbi tincidunt, metus
+                        non
+                        fermentum imperdiet.</p>
+                    <button>
+                        Wiki
+                    </button>
                 </div>
             </div>
-        </div>
-        <div class="containNews">
-            <h2 class="news">News :</h2>
+            <div class="main__news">
+                <h2>News :</h2>
+                <div class="news__articles__wrap">
+                    <!-- <div class="news__article">
+                        <div class="article__title__container">
+                            <div class="art-circle"></div><h3>Article :</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula ante in velit
+                            commodo,
+                            tempor finibus leo porta.</p>
+                        <div class="art-link">
+                            <a href="#">Lien</a><a href="#" class=""></a>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="news__seeAll">
+                    <a href="../view/news.html">See Others <span>News</span> <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
         </div>
     </main>
-    <footer class="footer">
-        <img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="logoFooter">
-        <ul class="navFooter">
-            <li>
-                <p>News</p>
-            </li>
-            <li>
-                <p>Wiki</p>
-            </li>
-        </ul>
-        <div class="containDowloadLauncherFooter">
-            <p>Dowload Launcher</p>
+
+    <!-- #Main -->
+
+    <!-- #Footer -->
+
+    <footer>
+        <div class="footer__BG footer__wrapper">
+            <div class="footer__img-nav__wrapper">
+                <img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo">
+                <ul class="footer__nav">
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Wiki</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="footer__download">
+                Download Launcher
+            </button>
+            <ul class="footer__credits">
+                <li>
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <a href="#">Discord</a>
+                </li>
+                <li>
+                    <a href="#">© Lorem ipsum dolor sit amet consecteur adipiscing</a>
+                </li>
+            </ul>
         </div>
-        <ul class="creditFooter">
-            <li>
-                <p>Discord</p>
-            </li>
-            <li>
-                <p>Instagram</p>
-            </li>
-            <li>
-                <p class="copyRight">&#xA9 Lorem ipsum dolor sit amet consecteur adipiscing</p>
-            </li>
-        </ul>
     </footer>
+
+    <!-- #Footer -->
+
+    <!-- #Script -->
+    <script src="https://kit.fontawesome.com/61d24657b9.js" crossorigin="anonymous"></script>
+    <script src='../assets/js/data.js'></script>
+    <script src='../assets/js/main.js'></script>
+
 </body>
-<script src="/assets/js/data.js"></script>
-<script src="/assets/js/main.js"></script>
-<script src="https://kit.fontawesome.com/882a8425ef.js" crossorigin="anonymous"></script>
 
 </html>

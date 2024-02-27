@@ -1,0 +1,13 @@
+.main__news h1 {
+    text-align: center;
+    color: var(--switch__on-to-dark);
+    font-size: 55px;
+    text-decoration: underline 2px;
+    text-underline-offset: 12px;
+    text-shadow: var(--text-shadow);
+    transition: 0.3s;
+
+    &:hover {
+        text-shadow: -5px 10px 15px rgba(0,0,0,1);
+    }
+}
