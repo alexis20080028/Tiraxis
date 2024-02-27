@@ -1,65 +1,9 @@
+const body = document.body;
 const buttonMenu = document.querySelector('.button__wrap');
 const burgerInfo = document.querySelector('.header__after');
 const btnOn = document.querySelector('.btn__on');
 const circleOn = document.querySelector('.circle__on');
 const on = document.querySelector('.on');
-
-// Mode | Dark/Light
-
-const enableDarkMode = () => {
-    document.documentElement.classList.add('dark-mode');
-    localStorage.setItem('theme', 'dark');
-};
-
-const disableDarkMode = () => {
-    document.documentElement.classList.remove('dark-mode');
-    localStorage.setItem('theme', 'light');
-};
-
-const toggleDarkMode = () => {
-    const root = document.documentElement;
-    if (btnOn.classList.contains('btn__off')) {
-        // Mode sombre
-        root.style.setProperty('--header-BG', 'var(--linear-gradient-1)');
-        root.style.setProperty('--main-BG', 'var(--dark-grey)');
-        root.style.setProperty('--wiki-BG', 'var(--linear-gradient-3)');
-        root.style.setProperty('--switch__on-to-dark', 'var(--white)');
-        root.style.setProperty('--download-color', 'var(--white-alternate)');
-        root.style.setProperty('--download-BG', 'var(--red)');
-        root.style.setProperty('--download-font', 'var(--white-alternate)');
-        root.style.setProperty('--to-darker', 'var(--dark-grey)');
-        root.style.setProperty('--button-discord', 'var(--dark-purple)');
-        root.style.setProperty('--button-wiki', 'var(--dark-green)');
-        root.style.setProperty('--artitcle-color', 'var(--very-dark-grey)');
-        root.style.setProperty('--artitcle-box-shadow', 'var(--box-shadow)');
-        enableDarkMode();
-    } else {
-        // Mode clair
-        root.style.setProperty('--header-BG', 'linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(116, 91, 208, 1) 100%)');
-        root.style.setProperty('--main-BG', 'var(--white-alternate)');
-        root.style.setProperty('--wiki-BG', 'linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(60, 133, 39, 1) 100%)');
-        root.style.setProperty('--switch__on-to-dark', '#1E1E1E');
-        root.style.setProperty('--switch__on-to-white', 'var(--white)');
-        root.style.setProperty('--download-color', '#D90000');
-        root.style.setProperty('--download-font', '#D90000');
-        root.style.setProperty('--download-BG', 'var(--white-alternate)');
-        root.style.setProperty('--to-darker', 'var(--very-dark-grey)');
-        root.style.setProperty('--button-discord', 'var(--mid-purple)');
-        root.style.setProperty('--button-wiki', 'url(../images/Snow_BG.jpg)');
-        root.style.setProperty('--artitcle-color', 'var(--mid-purple)');
-        root.style.setProperty('--artitcle-box-shadow', 'rgba(132, 118, 222, 1) -8px 11px 35px 8px');
-        disableDarkMode();
-    }
-};
-
-const applyDarkMode = () => {
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        enableDarkMode();
-    } else {
-        disableDarkMode();
-    }
-};
 
 // Button | On/Off
 
@@ -74,7 +18,6 @@ buttonMenu.addEventListener('click', () => {
 });
 
 btnOn.addEventListener('click', () => {
-    toggleDarkMode();
     btnOn.classList.toggle('btn__on');
     btnOn.classList.toggle('btn__off');
     circleOn.classList.toggle('circle__on');
@@ -82,6 +25,12 @@ btnOn.addEventListener('click', () => {
     on.classList.toggle('on');
     on.classList.toggle('off');
     on.textContent = (on.classList.contains('on') ? 'ON' : 'OFF');
+
+    if (body.dataset.theme === 'light') {
+        body.dataset.theme = 'dark';
+    } else {
+        body.dataset.theme = 'light';
+    }
 });
 
 // News | Functions

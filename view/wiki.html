@@ -13,7 +13,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/wiki.css'>
 </head>
 
-<body>
+<body class="DarkMod">
 
   <!-- #Header -->
 
@@ -30,13 +30,13 @@
           <nav class="header__before__nav nav_style">
             <ul>
               <li>
-                <a href="#">news</a>
+                <a href="./index.html">home</a>
               </li>
               <li>
-                <a href="#">faq</a>
+                <a href="#">News</a>
               </li>
               <li>
-                <a href="#">wiki</a>
+                <a href="./wiki.html">Wiki</a>
               </li>
               <li><button class="nav__btn_download">download</button></li>
             </ul>
@@ -61,6 +61,9 @@
         <div class="header__after__wrap">
           <nav class="header__after__nav nav_style">
             <ul>
+              <li>
+                <a href="./index.html">home</a>
+              </li>
               <li>
                 <a href="#">news</a>
               </li>
@@ -96,13 +99,19 @@
         </div>
         <div class="wiki__nav__wrapper">
           <nav>
-            <input type="checkbox" id="menu-toggle" checked/>
-            <label for="menu-toggle"></label>
+            <input type="checkbox" id="menu-toggle" checked />
+            <label for="menu-toggle">
+              <div>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-xmark"></i>
+                <p> - Gay</p>  
+              </div>
+            </label>
             <ul id="menu">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
             </ul>
           </nav>
         </div>
@@ -126,14 +135,19 @@
     <div class="footer__BG footer__wrapper">
       <div class="footer__img-nav__wrapper">
         <img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo">
-        <ul class="footer__nav">
-          <li>
-            <a href="#">News</a>
-          </li>
-          <li>
-            <a href="#">Wiki</a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="footer__nav">
+            <li>
+              <a href="./index.html">home</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="./wiki.html">Wiki</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <button class="footer__download">
         Download Launcher

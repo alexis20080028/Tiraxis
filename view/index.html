@@ -12,7 +12,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/style.css'>
 </head>
 
-<body>
+<body data-theme="dark">
 
     <!-- #Header -->
 
@@ -29,10 +29,13 @@
                     <nav class="header__before__nav nav_style">
                         <ul>
                             <li>
-                                <a href="#">news</a>
+                                <a href="./index.html">home</a>
                             </li>
                             <li>
-                                <a href="#">wiki</a>
+                                <a href="#">News</a>
+                            </li>
+                            <li>
+                                <a href="./wiki.html">Wiki</a>
                             </li>
                             <li><button class="nav__btn_download">download</button></li>
                         </ul>
@@ -58,10 +61,13 @@
                     <nav class="header__after__nav nav_style">
                         <ul>
                             <li>
+                                <a href="./index.html">home</a>
+                            </li>
+                            <li>
                                 <a href="#">news</a>
                             </li>
                             <li>
-                                <a href="#">wiki</a>
+                                <a href="./wiki.html">wiki</a>
                             </li>
                             <li><button class="nav__btn_download">download</button></li>
                         </ul>
@@ -127,7 +133,7 @@
                         Donec felis augue, hendrerit vitae mauris quis, vulputate hendrerit urna. Morbi tincidunt, metus
                         non
                         fermentum imperdiet.</p>
-                    <button>
+                    <button onclick="window.location.href = './wiki.html'">
                         Wiki
                     </button>
                 </div>
@@ -162,14 +168,19 @@
         <div class="footer__BG footer__wrapper">
             <div class="footer__img-nav__wrapper">
                 <img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo">
-                <ul class="footer__nav">
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Wiki</a>
-                    </li>
-                </ul>
+                <nav>
+                    <ul class="footer__nav">
+                        <li>
+                            <a href="./index.html">home</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li>
+                            <a href="./wiki.html">Wiki</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <button class="footer__download">
                 Download Launcher

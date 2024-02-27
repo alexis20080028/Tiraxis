@@ -64,8 +64,10 @@
     --button-wiki: url(../images/Snow_BG.jpg);
     --artitcle-color: var(--mid-purple); 
     --artitcle-box-shadow: rgba(132, 118, 222, 1) 0px 5px 15px; */ 
-    
 }
+
+/* #39FF00 */
+/* #3A8026 */
 
 * {
     box-sizing: border-box;
@@ -119,13 +121,25 @@ p {
 
 .wiki__nav__wrapper {
   background-color: var(--main-BG);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 170px;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .wiki__nav__wrapper nav ul {
   position: relative;
   margin: 0;
   list-style: none;
-  height: 200px;
+}
+
+label div {
+    width: auto;
+    height: 50px;
+    width: 50px;
+    background-color: #3A8026;
 }
 
 [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
