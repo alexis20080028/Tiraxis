@@ -12,7 +12,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/style.css'>
 </head>
 
-<body>
+<body data-theme="dark">
 
     <!-- #Header -->
 
@@ -25,16 +25,26 @@
                     <div class="button__line"></div>
                 </button>
                 <div class="nav__wrapper">
-                    <img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis">
+                    <a href="../view/index.html"><img src="/assets/images/logoTiraxis.png"
+                            alt="logo du serveur minecraft Tiraxis"></a>
                     <nav class="header__before__nav nav_style">
                         <ul>
+                            <li>
+                                <a href="../view/index.html">home</a>
+                            </li>
                             <li>
                                 <a href="../view/news.html">news</a>
                             </li>
                             <li>
-                                <a href="#">wiki</a>
+                                <a href="./wiki.html">wiki</a>
                             </li>
-                            <li><button class="nav__btn_download">download</button></li>
+                            <li>
+                                <button class="nav__btn_download">
+                                    <span>
+                                        download
+                                    </span>
+                                </button>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -58,12 +68,21 @@
                     <nav class="header__after__nav nav_style">
                         <ul>
                             <li>
-                                <a href="#">news</a>
+                                <a href="./index.html">home</a>
                             </li>
                             <li>
-                                <a href="#">wiki</a>
+                                <a href="./news.html">news</a>
                             </li>
-                            <li><button class="nav__btn_download">download</button></li>
+                            <li>
+                                <a href="./wiki.html">wiki</a>
+                            </li>
+                            <li>
+                                <button class="nav__btn_download">
+                                    <span>
+                                        download
+                                    </span>
+                                </button>
+                            </li>
                         </ul>
                     </nav>
                     <div class="v-line"></div>
@@ -83,7 +102,8 @@
                             <a href="#">Discord</a>
                         </li>
                         <li>
-                            <a href="#">© Lorem ipsum dolor sit amet consecteur adipiscing</a>
+                            <a href="#">© Lorem ipsum dolor sit amet consecteur
+                                adipiscing</a>
                         </li>
                     </ul>
                 </div>
@@ -127,7 +147,7 @@
                         Donec felis augue, hendrerit vitae mauris quis, vulputate hendrerit urna. Morbi tincidunt, metus
                         non
                         fermentum imperdiet.</p>
-                    <button>
+                    <button onclick="window.location.href = './wiki.html'">
                         Wiki
                     </button>
                 </div>
@@ -161,15 +181,21 @@
     <footer>
         <div class="footer__BG footer__wrapper">
             <div class="footer__img-nav__wrapper">
-                <img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo">
-                <ul class="footer__nav">
-                    <li>
-                        <a href="../view/news.html">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Wiki</a>
-                    </li>
-                </ul>
+                <a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis"
+                        class="footer__logo"></a>
+                <nav>
+                    <ul class="footer__nav">
+                        <li>
+                            <a href="./index.html">home</a>
+                        </li>
+                        <li>
+                            <a href="./news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="./wiki.html">Wiki</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             <button class="footer__download">
                 Download Launcher
