@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Space+Grotesk:wght@300..700&family=Squada+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[data-theme="dark"] {
+    --header-BG: var(--linear-gradient-1);
+    --main-BG: var(--dark-grey);
+    --wiki-BG: var(--linear-gradient-3);
+    --switch__on-to-dark: var(--white);
+    --download-color: var(--white-alternate);
+    --download-BG: var(--red);
+    --download-font: var(--white-alternate);
+    --to-darker: var(--dark-grey);
+    --button-discord: var(--dark-purple);
+    --button-wiki: var(--dark-green);
+    --artitcle-color: var(--very-dark-grey);
+    --artitcle-box-shadow: var(--box-shadow);
+}
+
+[data-theme="light"] {
+    --header-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(116, 91, 208, 1) 100%);
+    --main-BG: var(--white-alternate);
+    --wiki-BG: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(60, 133, 39, 1) 100%);
+    --switch__on-to-dark: #1E1E1E;
+    --switch__on-to-white: var(--white);
+    --download-color: #D90000;
+    --download-font: #D90000;
+    --download-BG: var(--white-alternate);
+    --to-darker: var(--very-dark-grey);
+    --button-discord: var(--mid-purple);
+    --button-wiki: url(../images/Snow_BG.jpg);
+    --artitcle-color: var(--mid-purple);
+    --artitcle-box-shadow: rgba(132, 118, 222, 1) 0px 5px 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Grotesk', cursive;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    font-size: 0;
+}
+
+h1 {
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h2,
+h3 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 10px;
+}
+
+p {
+    @media screen and (min-width: 900px) {
+        font-size: 17px;
+    }
+}
+
+/* <Header */
+
+.header__BG {
+    position: relative;
+    background: var(--wiki-BG);
+    width: 100%;
+}
+
+/* Wiki Nav */
+
+
+.wiki-menu {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+    background-color: var(--main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list__wrapp {
+    margin: 25px 15px 0;
+}
+
+.wiki-button-menu {
+    background-color: var(--very-dark-grey);
+    border: 2px var(--green-nav) solid;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: var(--white);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+
+.wiki-button-menu i {
+    margin-right: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wiki-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.wiki-list--li {
+    background-color: var(--very-dark-grey);
+    border: 2px var(--light-green-nav) solid;
+    border-radius: 10px;
+    height: 0;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    left: -500px;
+    width: fit-content;
+    transform: translate3d(0, 25px, 0);
+    transition: transform 1s ease;
+    visibility: hidden;
+}
+
+.wiki-list--li.after {
+    left: 15px;
+    top: -10px;
+
+    transform: translate3d(0, 0, 0);
+    border: 2px var(--light-green-nav) solid;
+    visibility: visible;
+    height: 25px;
+}
+
+.wiki-list--li.after:nth-child(2) {
+    top: 0px;
+}
+
+.wiki-list--li.after:nth-child(3) {
+    top: 10px;
+}
+
+.wiki-list--li.after:nth-child(4) {
+    top: 20px;
+}
+
+
+
+.wiki-list--li a {
+    text-align: center;
+    width: 100%;
+    margin: 0 10px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+
+/* Header> */
+
+/* <Main */
+
+
+
+/* Main> */
+
+
+/* <Footer */
+
+
+
+/* Footer> */
