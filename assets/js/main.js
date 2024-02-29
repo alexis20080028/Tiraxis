@@ -36,7 +36,7 @@ btnOn.addEventListener('click', () => {
 
 // News | Functions
 
-function divCreater(className, parentElement) {
+function divCreator(className, parentElement) {
     let div = document.createElement('div');
     div.classList.add(className);
     parentElement.appendChild(div);
@@ -46,9 +46,9 @@ function divCreater(className, parentElement) {
 const articlesWrapper = document.querySelector('.news__articles__wrap');
 
 for (let i = 0; i < 3; i++) {
-    const article = divCreater('article', articlesWrapper);
-    const newsArticle = divCreater('news__article', article);
-    const titleContainer = divCreater('article__title__container', newsArticle);
+    const article = divCreator('article', articlesWrapper);
+    const newsArticle = divCreator('news__article', article);
+    const titleContainer = divCreator('article__title__container', newsArticle);
 
     const artCircle = document.createElement('div');
     artCircle.classList.add('art-circle');
@@ -68,10 +68,6 @@ for (let i = 0; i < 3; i++) {
     const link1 = document.createElement('a');
     link1.setAttribute('href', '#');
     link1.textContent = 'Lien';
-
-    const link2 = document.createElement('a');
-    link2.setAttribute('href', '#');
-    link2.textContent = 'Lien';
 
     artLink.appendChild(link1);
 

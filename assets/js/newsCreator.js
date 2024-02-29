@@ -1,4 +1,4 @@
-function divCreater(className, parentElement, zoom) {
+function zoomCreator(className, parentElement, zoom) {
     let div = document.createElement('div');
     div.classList.add(className + zoom);
     parentElement.appendChild(div);
@@ -7,9 +7,9 @@ function divCreater(className, parentElement, zoom) {
 
 function createNews(truc, zoom, i,ok) {
     let articlesWrapper = document.querySelector(truc);
-    let article = divCreater('article', articlesWrapper, zoom);
-    let newsArticle = divCreater('news__article', article, zoom);
-    let titleContainer = divCreater('article__title__container', newsArticle, zoom);
+    let article = zoomCreator('article', articlesWrapper, zoom);
+    let newsArticle = zoomCreator('news__article', article, zoom);
+    let titleContainer = zoomCreator('article__title__container', newsArticle, zoom);
 
     let artCircle = document.createElement('div');
     artCircle.classList.add('art-circle' + zoom);

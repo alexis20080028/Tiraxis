@@ -1,47 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Space+Grotesk:wght@300..700&family=Squada+One&display=swap');
 
-:root {
-
-    /* Shadow */
-    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    --text-shadow: -1px 6px 10px rgba(0, 0, 0, 0.61);
-
-    /* Colors */
-    --white: #fff;
-    --white-alternate: #e4e5fb;
-    --green-minecraft: #3c8527;
-    --dark-green: #23710C;
-    --green-nav: #3A8026;
-    --light-green-nav: #39FF00;
-    --red: #A60000;
-
-    /* Purple */
-    --lightest-purple: #ced0f7;
-    --very-light-purple: #b1b2f0;
-    --light-purple: #b1b2f0;
-    --mid-light-purple: #9691e8;
-    --mid-purple: #8476de;
-    --purple: #745bd0;
-    --dark-purple: #644bb7;
-    --darker-purple: #55429a;
-    --very-dark-purple: #443976;
-    --absolute-purple: #2a2145;
-
-    /* Grey */
-    --very-dark-grey: #1C1C1C;
-    --dark-grey: #2D2D2D;
-    --grey: #3C3C3C;
-    --font-footer: #6C6C6C;
-
-    /* Linear */
-    --linear-gradient-1: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(116, 91, 208, 1) 100%);
-    --linear-gradient-2: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(150, 145, 232, 1) 100%);
-    --linear-gradient-3: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(60, 133, 39, 1) 100%);
-}
-
-/* #39FF00 */
-/* #3A8026 */
-
 * {
     box-sizing: border-box;
 }
@@ -77,7 +35,7 @@ html {
     --to-darker: var(--very-dark-grey);
     --button-discord: var(--mid-purple);
     --button-wiki: url(../images/Snow_BG.jpg);
-    --artitcle-color: var(--mid-purple); 
+    --artitcle-color: var(--mid-purple);
     --artitcle-box-shadow: rgba(132, 118, 222, 1) 0px 5px 15px;
 }
 
@@ -124,18 +82,20 @@ p {
 
 /* Wiki Nav */
 
+
 .wiki-menu {
     width: 100%;
-    height: 400px;
-    margin-bottom: 50px;
+    height: fit-content;
+    padding-bottom: 50px;
     background-color: var(--main-BG);
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
 }
 
 .list__wrapp {
-    margin-top: 50px;
+    margin: 25px 15px 0;
 }
 
 .wiki-button-menu {
@@ -144,6 +104,18 @@ p {
     border-radius: 10px;
     padding: 5px 10px;
     color: var(--white);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+}
+
+.wiki-button-menu i {
+    margin-right: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .wiki-list {
@@ -152,41 +124,51 @@ p {
     position: relative;
 }
 
-.wiki-list li {
+.wiki-list--li {
     background-color: var(--very-dark-grey);
-    height: 25px;
-    width: fit-content;
     border: 2px var(--light-green-nav) solid;
     border-radius: 10px;
-    margin: 5px;
+    height: 0;
+    width: fit-content;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: absolute;
-    top: -500px;
-    width: 100%;
-    transform: translate3d(0,-100%,0);
+    position: relative;
+    left: -500px;
+    width: fit-content;
+    transform: translate3d(0, 25px, 0);
+    transition: transform 1s ease;
+    visibility: hidden;
 }
 
-.after .wiki-list li:nth-child(2) {
+.wiki-list--li.after {
+    left: 15px;
     top: -10px;
+
+    transform: translate3d(0, 0, 0);
+    border: 2px var(--light-green-nav) solid;
+    visibility: visible;
+    height: 25px;
 }
 
-.after .wiki-list li:nth-child(2) {
+.wiki-list--li.after:nth-child(2) {
+    top: 0px;
+}
+
+.wiki-list--li.after:nth-child(3) {
+    top: 10px;
+}
+
+.wiki-list--li.after:nth-child(4) {
     top: 20px;
 }
 
-.after .wiki-list li:nth-child(3) {
-    top: 50px;
-}
 
-.after .wiki-list li:nth-child(4) {
-    top: 80px;
-}
 
-.wiki-list li a {
+.wiki-list--li a {
+    text-align: center;
     width: 100%;
     margin: 0 10px;
     color: var(--white);

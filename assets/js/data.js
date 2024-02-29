@@ -27,30 +27,26 @@ const newsListings = [
 
 const WikiMenuNavListings = [
         {
-                id: 1,
-                button: "Infos",
-                infos: "Ok",
+            id: 1,
+            button: "Infos",
+            infos: ["Ok"]
         },
         {
-                id: 2,
-                button: "Infos",
-                infos: "Ok",
-                infos: "Ok",
-                infos: "Ok",
+            id: 2,
+            button: "Infos",
+            infos: ["Ok", "Ok", "Ok"]
         },
         {
-                id: 3,
-                button: "Infos",
-                infos: "Ok",
-                infos: "Ok",
+            id: 3,
+            button: "Infos",
+            infos: ["Ok", "Ok"]
         },
         {
-                id: 4,
-                button: "Infos",
-                infos: "Ok",
-                infos: "Ok",
+            id: 4,
+            button: "Infos",
+            infos: ["Ok", "Ok"]
         },
-]
+    ];
 
 const WikiInfos = [
 // Wait...

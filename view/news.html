@@ -4,20 +4,20 @@
 <head>
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<title>Tiraxis | Serveur Minecraft</title>
+	<title>Tiraxis | News</title>
 	<link rel="shortcut icon" href="../assets/images/" type="image/x-icon">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<meta name='description' content='Web site for Tiraxis, the Server For The New Gen 😍'>
+	<meta name='description' content='Vous voulez savoir quelques chose sur le Serveur Tiraxis ? Bas vous êtes au bonne endroit ! 🤗'>
 	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/normalize.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/style.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/news.css'>
 </head>
 
-<body>
+<body data-theme="dark">
 
 	<!-- #Header -->
 
-	<header data-theme="dark">
+	<header>
 		<div class="header__BG">
 			<div class="header__before">
 				<button id="buttonMenu" class="button__wrap">
@@ -39,7 +39,13 @@
 							<li>
 								<a href="./wiki.html">wiki</a>
 							</li>
-							<li><button class="nav__btn_download">dowlaod</button></li>
+							<li>
+								<button class="nav__btn_download">
+									<span>
+										download
+									</span>
+								</button>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -71,7 +77,13 @@
 							<li>
 								<a href="./wiki.html">wiki</a>
 							</li>
-							<li><button class="nav__btn_download">dowlaod</button></li>
+							<li>
+								<button class="nav__btn_download">
+									<span>
+										download
+									</span>
+								</button>
+							</li>
 						</ul>
 					</nav>
 					<div class="v-line"></div>
@@ -115,7 +127,7 @@
 
 				<ul class="footer__nav">
 					<li>
-						<a href="../view/news.html">News</a>
+						<a href="../view/index.html">home</a>
 					</li>
 					<li>
 						<a href="../view/news.html">News</a>
@@ -149,12 +161,6 @@
 	<script src="https://kit.fontawesome.com/61d24657b9.js" crossorigin="anonymous"></script>
 	<script src='../assets/js/data.js'></script>
 	<script src='../assets/js/newsCreator.js'></script>
-	<script>
-		for (let i = 0; i < newsListings.length; i++) {
-			createNews(".news__articles__wrap", "", i,true)
-
-		}
-	</script>
 	<script src='../assets/js/news.js'></script>
 </body>
 

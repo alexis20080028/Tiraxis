@@ -1,45 +1,3 @@
-:root {
-
-    /* Shadow */
-    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    --text-shadow: -1px 6px 10px rgba(0, 0, 0, 0.61);
-
-    /* Colors */
-    --white: #fff;
-    --white-alternate: #e4e5fb;
-    --green-minecraft: #3c8527;
-    --dark-green: #23710C;
-    --green-nav: #3A8026;
-    --light-green-nav: #39FF00;
-    --red: #A60000;
-
-    /* Purple */
-    --lightest-purple: #ced0f7;
-    --very-light-purple: #b1b2f0;
-    --light-purple: #b1b2f0;
-    --mid-light-purple: #9691e8;
-    --mid-purple: #8476de;
-    --purple: #745bd0;
-    --dark-purple: #644bb7;
-    --darker-purple: #55429a;
-    --very-dark-purple: #443976;
-    --absolute-purple: #2a2145;
-
-    /* Grey */
-    --very-dark-grey: #1C1C1C;
-    --dark-grey: #2D2D2D;
-    --grey: #3C3C3C;
-    --font-footer: #6C6C6C;
-
-    /* Linear */
-    --linear-gradient-1: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(116, 91, 208, 1) 100%);
-    --linear-gradient-2: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(150, 145, 232, 1) 100%);
-    --linear-gradient-3: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(60, 133, 39, 1) 100%);
-}
-
-/* #39FF00 */
-/* #3A8026 */
-
 * {
     box-sizing: border-box;
 }
@@ -79,6 +37,31 @@ html {
     --artitcle-box-shadow: rgba(132, 118, 222, 1) 0px 5px 15px;
 }
 
+/* <Header */
+
+
+/* Header> */
+
+
+/* <Main */
+
+
+/* Main> */
+
+
+/* <Footer */
+
+
+/* Footer> */
+
+
+/* -\ Clear /- */
+
+.clear {
+    clear: both;
+}
+
+
 .main__news h1 {
     text-align: center;
     color: var(--switch__on-to-dark);
@@ -115,6 +98,7 @@ html {
 }
 
 .news__article__zoom {
+  position: relative;
     height: 450px;
     width: 350px;
     background-color: var(--artitcle-color);
@@ -190,33 +174,34 @@ html {
     background: rgba(0, 0, 0, 0.394);
 }
 
-.close {
-    position: absolute;
-    right: 32px;
-    top: 32px;
+.zoom-arrow-close {
+  position: absolute;
+    right: 10px;
+    bottom: 10px;
     width: 52px;
     height: 52px;
     opacity: 0.3;
+    display: flex;
+    justify-content: center;
 }
 
-.close:hover {
+.zoom-arrow-close:hover {
     opacity: 1;
 }
 
-.close:before,
-.close:after {
+.zoom-arrow-close:before,
+.zoom-arrow-close:after {
     position: absolute;
-    left: 15px;
     content: ' ';
     height: 52px;
     width: 4px;
     background-color: #b6b6b6;
 }
 
-.close:before {
+.zoom-arrow-close:before {
     transform: rotate(45deg);
 }
 
-.close:after {
+.zoom-arrow-close:after {
     transform: rotate(-45deg);
 }
