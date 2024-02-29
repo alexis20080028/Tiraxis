@@ -9,15 +9,15 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta name='description' content='Web site for Tiraxis, the Server For The New Gen 😍'>
 	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/normalize.css'>
-	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/news.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/style.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/news.css'>
 </head>
 
-<body data-theme="dark">
+<body>
 
 	<!-- #Header -->
 
-	<header>
+	<header data-theme="dark">
 		<div class="header__BG">
 			<div class="header__before">
 				<button id="buttonMenu" class="button__wrap">
@@ -26,25 +26,20 @@
 					<div class="button__line"></div>
 				</button>
 				<div class="nav__wrapper">
-					<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis"></a>
+					<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png"
+							alt="logo du serveur minecraft Tiraxis"></a>
 					<nav class="header__before__nav nav_style">
 						<ul>
 							<li>
-								<a href="./index.html">home</a>
+								<a href="../view/index.html">home</a>
 							</li>
 							<li>
-								<a href="./news.html">news</a>
+								<a href="../view/news.html">news</a>
 							</li>
 							<li>
 								<a href="./wiki.html">wiki</a>
 							</li>
-							<li>
-								<button class="nav__btn_download">
-										<span>
-												download
-										</span>
-								</button>
-						</li>
+							<li><button class="nav__btn_download">dowlaod</button></li>
 						</ul>
 					</nav>
 				</div>
@@ -76,13 +71,7 @@
 							<li>
 								<a href="./wiki.html">wiki</a>
 							</li>
-							<li>
-								<button class="nav__btn_download">
-										<span>
-												download
-										</span>
-								</button>
-						</li>
+							<li><button class="nav__btn_download">dowlaod</button></li>
 						</ul>
 					</nav>
 					<div class="v-line"></div>
@@ -112,30 +101,27 @@
 	</header>
 
 	<main class="main__BG">
-		<div class="main__news">
+		<div class="main__news main__BG">
 			<h2>News :</h2>
 			<div class="news__articles__wrap">
-
 			</div>
-
-
-
 	</main>
 
 	<footer>
 		<div class="footer__BG footer__wrapper">
 			<div class="footer__img-nav__wrapper">
-				<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo"></a>
+				<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis"
+						class="footer__logo"></a>
 
 				<ul class="footer__nav">
 					<li>
-						<a href="./index.html">home</a>
+						<a href="../view/news.html">News</a>
 					</li>
 					<li>
-						<a href="./news.html">news</a>
+						<a href="../view/news.html">News</a>
 					</li>
 					<li>
-						<a href="./wiki.html">wiki</a>
+						<a href="./wiki.html">Wiki</a>
 					</li>
 				</ul>
 			</div>
@@ -163,9 +149,12 @@
 	<script src="https://kit.fontawesome.com/61d24657b9.js" crossorigin="anonymous"></script>
 	<script src='../assets/js/data.js'></script>
 	<script src='../assets/js/newsCreator.js'></script>
-		<script>
-			createNews(newsListings.length, ".news__articles__wrap","");
-		</script>
+	<script>
+		for (let i = 0; i < newsListings.length; i++) {
+			createNews(".news__articles__wrap", "", i,true)
+
+		}
+	</script>
 	<script src='../assets/js/news.js'></script>
 </body>
 

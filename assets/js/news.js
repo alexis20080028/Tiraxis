@@ -1,9 +1,3 @@
-/*
-1. Sélectionne des éléments sur le DOM
-2. Crée tes fonctions
-3. Ajoute tes eventListeners
-4. Ajoute une fonction main
-*/
 let viewMor = document.querySelectorAll('.viewMore')
 let buttonMenu = document.querySelector('.button__wrap');
 let burgerInfo = document.querySelector('.header__after');
@@ -14,34 +8,54 @@ let buttonzoom = document.querySelectorAll('.viewMore');
 
 
 
-function name(params) {
+function createExit() {
+    let mainNews = document.querySelector('.article__title__container__zoom')
+    let cross = document.createElement('div');
+    cross.classList.add('close');
+    mainNews.append(cross);
+
+    cross.addEventListener('click', function() {
+        let articleZoom = document.querySelector(".article__zoom")
+        cross.remove()
+        articleZoom.remove()
+
+    })
     
 }
 
+
 // Button | On/Off
+
 buttonMenu.addEventListener('click', () => {
     buttonMenu.classList.toggle('cross');
     burgerInfo.classList.toggle('close');
-
+  
     buttonMenu.classList.toggle('closedbtn');
     buttonMenu.classList.toggle('openbtn');
-
+  
     burgerInfo.classList.toggle('openMenu');
-});
+  });
 
 btnOn.addEventListener('click', () => {
-    toggleDarkMode();
-    btnOn.classList.toggle('btn__on');
-    btnOn.classList.toggle('btn__off');
-    circleOn.classList.toggle('circle__on');
-    circleOn.classList.toggle('circle__off');
-    on.classList.toggle('on');
-    on.classList.toggle('off');
-    on.textContent = (on.classList.contains('on') ? 'ON' : 'OFF');
+  btnOn.classList.toggle('btn__on');
+  btnOn.classList.toggle('btn__off');
+  circleOn.classList.toggle('circle__on');
+  circleOn.classList.toggle('circle__off');
+  on.classList.toggle('on');
+  on.classList.toggle('off');
+  on.textContent = (on.classList.contains('on') ? 'ON' : 'OFF');
+
+  if (body.dataset.theme === 'light') {
+      body.dataset.theme = 'dark';
+  } else {
+      body.dataset.theme = 'light';
+  }
+  
 });
 
 for (let i = 0; i < buttonzoom.length; i++) {
-    buttonzoom[i].addEventListener('click', function() {
-		createNews(1, ".news__articles__wrap","__zoom",i);
+    buttonzoom[i].addEventListener('click', function () {
+        createNews(".main__news", "__zoom", i,false);
+        createExit()
     })
 }
