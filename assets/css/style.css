@@ -190,6 +190,7 @@ header {
 
 .header__before img {
     height: 94px;
+    width: 100px;
 }
 
 .header__before__nav {
@@ -343,6 +344,7 @@ header {
 .nav_style a {
     margin: 0;
     color: var(--switch__on-to-dark);
+    
     font-size: 12px;
     font-weight: 300;
     text-transform: capitalize;
@@ -362,22 +364,17 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 30px;
+    width: 80px;
 }
 
-.nav__btn_download:only-child {
-    height: 25px;
-    width: 80px;
+.nav__btn_download span {
     font-size: small;
     font-weight: bold;
     color: var(--download-font);
     text-transform: capitalize;
     margin: 0;
     padding: 0;
-
-    @media screen and (min-width: 900px) {
-        height: 30px;
-        width: 90px;
-    }
 }
 
 .v-line {

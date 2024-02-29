@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang='FR-fr'>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Tiraxis | Serveur Minecraft</title>
+	<link rel="shortcut icon" href="../assets/images/" type="image/x-icon">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='description' content='Web site for Tiraxis, the Server For The New Gen 😍'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/normalize.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/news.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../assets/css/style.css'>
+</head>
+
+<body data-theme="dark">
+
+	<!-- #Header -->
+
+	<header>
+		<div class="header__BG">
+			<div class="header__before">
+				<button id="buttonMenu" class="button__wrap">
+					<div class="button__line"></div>
+					<div class="button__line"></div>
+					<div class="button__line"></div>
+				</button>
+				<div class="nav__wrapper">
+					<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis"></a>
+					<nav class="header__before__nav nav_style">
+						<ul>
+							<li>
+								<a href="./index.html">home</a>
+							</li>
+							<li>
+								<a href="./news.html">news</a>
+							</li>
+							<li>
+								<a href="./wiki.html">wiki</a>
+							</li>
+							<li>
+								<button class="nav__btn_download">
+										<span>
+												download
+										</span>
+								</button>
+						</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="accompt__mode__wrapper">
+					<div class="header__accompt media__accompt">
+						<button>
+							sign up
+						</button>
+						<button>
+							login
+						</button>
+					</div>
+					<div class="btn__on btn__switch">
+						<div class="circle__on"></div>
+						<p class="on">on</p>
+					</div>
+				</div>
+			</div>
+			<div class="header__after">
+				<div class="header__after__wrap">
+					<nav class="header__after__nav nav_style">
+						<ul>
+							<li>
+								<a href="./index.html">home</a>
+							</li>
+							<li>
+								<a href="./news.html">news</a>
+							</li>
+							<li>
+								<a href="./wiki.html">wiki</a>
+							</li>
+							<li>
+								<button class="nav__btn_download">
+										<span>
+												download
+										</span>
+								</button>
+						</li>
+						</ul>
+					</nav>
+					<div class="v-line"></div>
+					<div class="header__accompt">
+						<button>
+							sign up
+						</button>
+						<button>
+							login
+						</button>
+					</div>
+					<ul class="header__after__credits">
+						<li>
+							<a href="#">Instagram</a>
+						</li>
+						<li>
+							<a href="#">Discord</a>
+						</li>
+						<li>
+							<a href="#">© Lorem ipsum dolor sit amet consecteur
+								adipiscing</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main__BG">
+		<div class="main__news">
+			<h2>News :</h2>
+			<div class="news__articles__wrap">
+
+			</div>
+
+
+
+	</main>
+
+	<footer>
+		<div class="footer__BG footer__wrapper">
+			<div class="footer__img-nav__wrapper">
+				<a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo"></a>
+
+				<ul class="footer__nav">
+					<li>
+						<a href="./index.html">home</a>
+					</li>
+					<li>
+						<a href="./news.html">news</a>
+					</li>
+					<li>
+						<a href="./wiki.html">wiki</a>
+					</li>
+				</ul>
+			</div>
+			<button class="footer__download">
+				Dowload Launcher
+			</button>
+			<ul class="footer__credits">
+				<li>
+					<a href="#">Instagram</a>
+				</li>
+				<li>
+					<a href="#">Discord</a>
+				</li>
+				<li>
+					<a href="#">© Lorem ipsum dolor sit amet consecteur adipiscing</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- #Footer -->
+
+
+	<!-- #Script -->
+	<script src="https://kit.fontawesome.com/61d24657b9.js" crossorigin="anonymous"></script>
+	<script src='../assets/js/data.js'></script>
+	<script src='../assets/js/newsCreator.js'></script>
+		<script>
+			createNews(newsListings.length, ".news__articles__wrap","");
+		</script>
+	<script src='../assets/js/news.js'></script>
+</body>
+
+</html>

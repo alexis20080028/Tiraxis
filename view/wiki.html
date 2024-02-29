@@ -13,7 +13,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='../assets/css/wiki.css'>
 </head>
 
-<body class="DarkMod">
+<body data-theme="dark">
 
   <!-- #Header -->
 
@@ -26,19 +26,25 @@
           <div class="button__line"></div>
         </button>
         <div class="nav__wrapper">
-          <img src="/assets/images/logoTiraxis.png" alt="logo du serveur minecraft Tiraxis">
+          <a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis"></a>
           <nav class="header__before__nav nav_style">
             <ul>
               <li>
                 <a href="./index.html">home</a>
               </li>
               <li>
-                <a href="#">News</a>
+                <a href="./news.html">news</a>
               </li>
               <li>
-                <a href="./wiki.html">Wiki</a>
+                <a href="./wiki.html">wiki</a>
               </li>
-              <li><button class="nav__btn_download">download</button></li>
+              <li>
+                <button class="nav__btn_download">
+                  <span>
+                    download
+                  </span>
+                </button>
+              </li>
             </ul>
           </nav>
         </div>
@@ -65,15 +71,18 @@
                 <a href="./index.html">home</a>
               </li>
               <li>
-                <a href="#">news</a>
+                <a href="./news.html">news</a>
               </li>
               <li>
-                <a href="#">faq</a>
+                <a href="./wiki.html">wiki</a>
               </li>
               <li>
-                <a href="#">wiki</a>
+                <button class="nav__btn_download">
+                  <span>
+                    download
+                  </span>
+                </button>
               </li>
-              <li><button class="nav__btn_download">download</button></li>
             </ul>
           </nav>
           <div class="v-line"></div>
@@ -97,23 +106,22 @@
             </li>
           </ul>
         </div>
-        <div class="wiki__nav__wrapper">
-          <nav>
-            <input type="checkbox" id="menu-toggle" checked />
-            <label for="menu-toggle">
-              <div>
-                <i class="fa-solid fa-caret-down"></i>
-                <i class="fa-solid fa-xmark"></i>
-                <p> - Gay</p>  
-              </div>
-            </label>
-            <ul id="menu">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
+        <div class="wiki-menu">
+          <div class="list__wrapp">
+            <button class="wiki-button-menu">
+              <i class="fa-solid fa-caret-down fontawesome"></i>
+              <i class="fa-solid fa-xmark menu-cross hide"></i>
+              Bonjour
+            </button>
+            <ul class="wiki-list hide">
+              <li>
+                <a href="#">Coucou</a>
+              </li>
+              <li>
+                <a href="#">Coucou</a>
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
     </div>
@@ -134,14 +142,15 @@
   <footer>
     <div class="footer__BG footer__wrapper">
       <div class="footer__img-nav__wrapper">
-        <img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis" class="footer__logo">
+        <a href="../view/index.html"><img src="/assets/images/logoTiraxis.png" alt="logo Tiraxis"
+            class="footer__logo"></a>
         <nav>
           <ul class="footer__nav">
             <li>
               <a href="./index.html">home</a>
             </li>
             <li>
-              <a href="#">News</a>
+              <a href="./news.html">News</a>
             </li>
             <li>
               <a href="./wiki.html">Wiki</a>
@@ -172,6 +181,7 @@
   <script src="https://kit.fontawesome.com/61d24657b9.js" crossorigin="anonymous"></script>
   <script src='../assets/js/data.js'></script>
   <script src='../assets/js/main.js'></script>
+  <script src="../assets/js/wiki.js"></script>
 
 </body>
 
