@@ -349,7 +349,8 @@ header {
     color: var(--switch__on-to-dark);
     
     font-size: 12px;
-    font-weight: 300;
+    letter-spacing: 1px;
+    font-weight: 600;
     text-transform: capitalize;
     text-decoration: none;
 
@@ -659,7 +660,7 @@ main {
 
 .main__wiki__wrap p {
     color: var(--switch__on-to-dark);
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 30px;
 
     @media screen and (min-width: 900px) {
@@ -772,8 +773,8 @@ main {
 }
 
 .art-circle {
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
     border-radius: 100%;
     background-color: var(--red);
     margin-right: 20px;
@@ -792,7 +793,7 @@ main {
 
 .news__article h3 {
     color: var(--white-alternate);
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: underline 1.5px;
     text-underline-offset: 5px;
 

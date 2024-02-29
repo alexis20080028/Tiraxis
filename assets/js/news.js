@@ -1,3 +1,4 @@
+const body = document.body;
 let viewMor = document.querySelectorAll('.viewMore')
 let buttonMenu = document.querySelector('.button__wrap');
 let burgerInfo = document.querySelector('.header__after');
@@ -46,6 +47,7 @@ function createExit() {
         let articleZoom = document.querySelector(".article__zoom")
         cross.remove()
         articleZoom.remove()
+        body.classList.remove('overflowHid');
     })
 
 }
@@ -91,6 +93,7 @@ for (let i = 0; i < newsListings.length; i++) {
     link1.addEventListener('click', function () {
         createNews(".main__news", "__zoom", i, false);
         createExit()
+        body.classList.add('overflowHid');
     })
 
     newsArticle.appendChild(articleContent);

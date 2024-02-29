@@ -5,7 +5,7 @@ function zoomCreator(className, parentElement, zoom) {
     return div;
 }
 
-function createNews(truc, zoom, i,ok) {
+function createNews(truc, zoom, i, ok) {
     let articlesWrapper = document.querySelector(truc);
     let article = zoomCreator('article', articlesWrapper, zoom);
     let newsArticle = zoomCreator('news__article', article, zoom);
@@ -27,11 +27,10 @@ function createNews(truc, zoom, i,ok) {
     artLink.classList.add('art-link' + zoom);
     if (ok == true) {
         let link1 = document.createElement('p');
-    link1.textContent = 'view more';
-    link1.classList.add('viewMore' + zoom)
-    artLink.appendChild(link1);
+        link1.textContent = 'view more';
+        link1.classList.add('viewMore' + zoom)
+        artLink.appendChild(link1);
     }
-    
 
     newsArticle.appendChild(articleContent);
     newsArticle.appendChild(artLink);

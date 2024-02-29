@@ -76,12 +76,15 @@ p {
 
 .header__BG {
     position: relative;
-    background: var(--wiki-BG);
+    background: var(--wiki-BG)  ;
     width: 100%;
 }
 
-/* Wiki Nav */
+/* Header> */
 
+/* <Main */
+
+/* Wiki Nav */
 
 .wiki-menu {
     width: 100%;
@@ -175,18 +178,4 @@ p {
     text-decoration: none;
 }
 
-
-/* Header> */
-
-/* <Main */
-
-
-
 /* Main> */
-
-
-/* <Footer */
-
-
-
-/* Footer> */
